@@ -163,7 +163,7 @@ body {
   color: var(--accent-color);
 }
 
-/* Хедер-контакти */
+/* Хедер-контакты */
 
 .contacts {
   display: flex;
@@ -501,17 +501,17 @@ body {
 
 /* Фільтри */
 
-.filter-list {
+.filter {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.filter-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter-btn {
+.filter__btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -528,12 +528,12 @@ body {
     filter 250ms var(--timing-function);
 }
 
-.filter-btn.first {
+.filter__btn--first {
   padding: 6px 25px;
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.filter__btn:hover,
+.filter__btn:focus {
   color: var(--white-text-color);
   background-color: var(--accent-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -541,7 +541,7 @@ body {
 
 /* Проекти */
 
-.project-list {
+.project {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -550,55 +550,35 @@ body {
   margin-bottom: calc(-1 * var(--card-set-gap));
 }
 
-.project-box {
-  padding: 20px 24px;
-
-  border-right: 1px solid var(--border-portfolio);
-  border-bottom: 1px solid var(--border-portfolio);
-  border-left: 1px solid var(--border-portfolio);
-  overflow: hidden;
-}
-
-.project-item {
+.project__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
 }
 
-.project-link {
+.project__link {
   display: block;
 
   transition: box-shadow 250ms var(--timing-function);
 }
 
-.project-link:hover,
-.project-link:focus {
+.project__link:hover,
+.project__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.project-title {
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--secondary-text-color);
-
-  margin-bottom: 4px;
+.project__link:hover .project__overlay {
+  transform: translateY(0%);
 }
 
-.project-text {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-
-.project-thumb {
+.project__thumb {
   position: relative;
   overflow: hidden;
 }
 
-.project-overlay {
+
+.project__overlay {
   position: absolute;
   display: block;
   left: 0;
@@ -615,9 +595,39 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.project-link:hover .project-overlay {
-  transform: translateY(0%);
+
+
+.project__box {
+  padding: 20px 24px;
+
+  border-right: 1px solid var(--border-portfolio);
+  border-bottom: 1px solid var(--border-portfolio);
+  border-left: 1px solid var(--border-portfolio);
+  overflow: hidden;
 }
+
+
+
+
+.project__title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text-color);
+
+  margin-bottom: 4px;
+}
+
+.project__text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+
+
+
 /* Підвал */
 
 .footer {
