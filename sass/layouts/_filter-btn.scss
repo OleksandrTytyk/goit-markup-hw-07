@@ -1,0 +1,37 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter__item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.filter__btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background-color: var(--button-bcg-color);
+    cursor: pointer;
+
+    border-color: transparent;
+    border-radius: 4px;
+    padding: 6px 22px;
+
+    transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function),
+        filter 250ms var(--timing-function);
+}
+
+.filter__btn--first {
+    padding: 6px 25px;
+}
+
+.filter__btn:hover,
+.filter__btn:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
