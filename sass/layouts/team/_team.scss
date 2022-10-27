@@ -2,10 +2,11 @@
   background-color: var(--section-font-color);
 
   &__title {
-    font-size: 36px;
-    line-height: 1.16;
+
+    @include fonts(null, 36px, 1.16, 0.03em);
+
     text-align: center;
-    letter-spacing: 0.03em;
+
     color: var(--secondary-text-color);
 
     margin-bottom: 50px;
@@ -33,18 +34,17 @@
   }
 
   &__subtitle {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+
+    @include fonts(500, 16px, 1.19, 0.03em);
+
     color: var(--secondary-text-color);
 
     margin-bottom: 10px;
   }
 
   &__text {
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
+
+    @include fonts(null, 16px, 1.19, 0.03em);
+
   }
 }

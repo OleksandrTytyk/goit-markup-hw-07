@@ -5,9 +5,7 @@
 .textarea__comment {
   display: block;
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
+  @include fonts(null, 12px, 1.17, 0.01em);
 
   margin-bottom: 4px;
 }
@@ -36,9 +34,8 @@
   }
 
   &::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    
+    @include fonts(null, 12px, 1.17, 0.01em);
 
     color: rgba(117, 117, 117, 0.5);
   }

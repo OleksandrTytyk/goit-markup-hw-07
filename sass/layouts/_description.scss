@@ -2,10 +2,11 @@
   padding-top: 0;
 
   &__title {
-    font-size: 36px;
-    line-height: 1.16;
+
+    @include fonts(null, 36px, 1.16, 0.03em);
+
     text-align: center;
-    letter-spacing: 0.03em;
+
     color: var(--secondary-text-color);
 
     margin-bottom: 50px;
@@ -32,11 +33,10 @@
     bottom: 0;
     left: 0;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include fonts(700, 14px, 1.14, 0.03em);
+
     text-align: center;
-    letter-spacing: 0.03em;
+
     text-transform: uppercase;
 
     color: var(--white-text-color);

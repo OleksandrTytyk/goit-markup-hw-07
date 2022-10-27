@@ -24,9 +24,9 @@
 }
 
 .features__title {
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+
+    @include fonts(null, 14px, 1.14, 0.03em);
+
     text-transform: uppercase;
     color: var(--secondary-text-color);
 
@@ -34,7 +34,7 @@
 }
 
 .features__text {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+
+    @include fonts(null, 14px, 1.71, 0.03em);
+
 }

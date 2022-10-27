@@ -256,17 +256,12 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.checkbox__link {
+.checkbox .checkbox__link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-
-.checkboxField {
-  margin-bottom: 30px;
-}
-
 .checkbox__custom {
   display: flex;
   align-items: center;
@@ -287,6 +282,10 @@ body {
 }
 .checkbox__input:focus + .checkbox__custom {
   border-color: var(--accent-color);
+}
+
+.checkboxField {
+  margin-bottom: 30px;
 }
 
 .formButton {
@@ -497,8 +496,8 @@ body {
 .description__title {
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--secondary-text-color);
   margin-bottom: 50px;
 }
@@ -521,8 +520,8 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--white-text-color);
   background-color: rgba(47, 48, 58, 0.8);
@@ -534,8 +533,8 @@ body {
 .team__title {
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--secondary-text-color);
   margin-bottom: 50px;
 }
@@ -650,11 +649,6 @@ body {
   justify-content: center;
   margin-bottom: 50px;
 }
-
-.filter__item:not(:last-child) {
-  margin-right: 8px;
-}
-
 .filter__btn {
   font-family: inherit;
   font-weight: 500;
@@ -668,16 +662,17 @@ body {
   padding: 6px 22px;
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), filter 250ms var(--timing-function);
 }
-
 .filter__btn--first {
   padding: 6px 25px;
 }
-
-.filter__btn:hover,
-.filter__btn:focus {
+.filter__btn:hover, .filter__btn:focus {
   color: var(--white-text-color);
   background-color: var(--accent-color);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.filter__item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .project {
@@ -688,32 +683,22 @@ body {
   margin-right: calc(-1 * var(--card-set-gap));
   margin-bottom: calc(-1 * var(--card-set-gap));
 }
-
 .project__item {
   flex-basis: calc(33.3333333333% - 30px);
   margin-right: var(--card-set-gap);
   margin-bottom: var(--card-set-gap);
 }
-
 .project__link {
   display: block;
   transition: box-shadow 250ms var(--timing-function);
 }
-
-.project__link:hover,
-.project__link:focus {
+.project__link:hover, .project__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
-.project__link:hover .project__overlay {
-  transform: translateY(0%);
-}
-
 .project__thumb {
   position: relative;
   overflow: hidden;
 }
-
 .project__overlay {
   position: absolute;
   display: block;
@@ -728,15 +713,16 @@ body {
   color: var(--white-text-color);
   background-color: rgba(33, 150, 243, 0.9);
 }
-
-.project__box {
+.project__link:hover .project__overlay {
+  transform: translateY(0%);
+}
+.project .project__box {
   padding: 20px 24px;
   border-right: 1px solid var(--border-portfolio);
   border-bottom: 1px solid var(--border-portfolio);
   border-left: 1px solid var(--border-portfolio);
   overflow: hidden;
 }
-
 .project__title {
   font-size: 18px;
   line-height: 2;
@@ -744,7 +730,6 @@ body {
   color: var(--secondary-text-color);
   margin-bottom: 4px;
 }
-
 .project__text {
   font-size: 16px;
   line-height: 1.88;
